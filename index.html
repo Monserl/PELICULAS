@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Películas </title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+  <div class="flex-container">
+    <i class='bx bx-movie-play'></i>
+    <h1>MovieFinder</h1>
+  </div>
+
+
+  <div class= "search-container">
+    <input type="text" id="movie-input" placeholder="Buscar película...">
+    <select id="sort">
+      <option value="time">Duración</option>
+      <option value="name">Nombre</option>
+    </select>
+    <button id="suggestion-btn">Película más corta</button>
+  </div>
+  
+  <div id="autocomplete-list"></div>
+</header>
+  
+  <div id="movies">
+    <!-- Aparecen las películas -->
+  </div>
+
+  <p id="analysis"></p>
+
+
+<footer>
+    <p>Hecho con <i class='bx bxs-heart' style="color: #e50914"></i> para amantes del cine</p>
+</footer>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
